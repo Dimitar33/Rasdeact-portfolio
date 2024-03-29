@@ -1,0 +1,21 @@
+.logo-container {
+    max-width: 400px;
+    max-height: 608px;
+    position: absolute;
+    left: 55%;
+    margin: auto;
+    top: 10%;
+
+    img {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .logo-container {
+        display: none;
+    }
+}
