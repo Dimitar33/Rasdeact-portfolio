@@ -1,9 +1,9 @@
 import "./index.scss";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LogoD from "../../public/logo.svg.png";
 import logo from "../../public/Dimitar.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiagramProject, faEnvelope, faGraduationCap, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faDiagramProject, faEnvelope, faGraduationCap, faHome, faUser, faSchool } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faGithub,
@@ -13,14 +13,11 @@ import {
 export default function Sidebar() {
   return (
     <div className="nav-bar">
-      <Link className="logo">
+      <NavLink className="logo" to='/'>
         <img src={LogoD} alt="logo"></img>
         <img className="sub-logo" src={logo} alt="dimitar"></img>
-      </Link>
+      </NavLink>
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e"></FontAwesomeIcon>
-        </NavLink>
         <NavLink
           className="about"
           exact="true"
@@ -36,6 +33,9 @@ export default function Sidebar() {
           to="/contacts"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"></FontAwesomeIcon>
+        </NavLink>
+        <NavLink exact="true" activeclassname="active" to="/diplomas">
+          <FontAwesomeIcon icon={faSchool} color="#4d4d4e"></FontAwesomeIcon>
         </NavLink>
         <NavLink
           className="courses"

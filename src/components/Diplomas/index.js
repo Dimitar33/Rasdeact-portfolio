@@ -3,9 +3,9 @@ import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
-import craouselData from "./data/carouselData.js";
+import craouselData from "./data/diplomasData.js";
 
-export default function Courses() {
+export default function Diplomas() {
   const [letterClass, setLetterClass] = useState("text-animate");
   const coursesText = "the courses I have done so far.".split("");
 

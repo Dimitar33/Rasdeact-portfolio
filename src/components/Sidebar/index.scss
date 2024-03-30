@@ -65,19 +65,19 @@ nav {
 
       &:first-child {
         &::after {
-          content: "HOME";
+          content: "ABOUT";
         }
       }
 
       &:nth-child(2) {
         &::after {
-          content: "ABOUT";
+          content: "CONTACTS";
         }
       }
 
       &:nth-child(3) {
         &::after {
-          content: "CONTACTS";
+          content: "DIPLOMAS";
         }
       }
 
@@ -118,6 +118,12 @@ nav {
       display: block;
       font-size: 21px;
       line-height: 16px;
+      
+      
+        svg {
+          color: #4779af;
+        }
+      
 
       &:hover {
         svg {
@@ -146,8 +152,7 @@ nav {
         height: auto;
 
         &.sub-logo {
-          visibility: hidden;
-          width: 0px;
+          display: none;
         }
       }
     }

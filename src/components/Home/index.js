@@ -9,7 +9,8 @@ import Loader from "react-loaders";
 export default function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
   const nameArray = ["i", "m", "i", "t", "a", "r"];
-  const jobArray = 'a software enthusiast'.split(''); 
+  const jobArray = 'a software'.split(''); 
+  const enthusiastArray = 'enthusiast'.split(''); 
 
   useEffect(() => {
    setTimeout(() => {
@@ -39,6 +40,12 @@ export default function Home() {
             letterClass={letterClass}
             strArray={jobArray}
             idx={23}
+          ></AnimatedLetters>
+          <br/>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={enthusiastArray}
+            idx={35}
           ></AnimatedLetters>
          <span className={`${letterClass} _57`}>.</span>
         </h1>
